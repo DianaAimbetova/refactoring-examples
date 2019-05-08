@@ -1,17 +1,21 @@
 package organizingdata.replacedatawithobj.after;
 
 public class Order {
-    private String customer;
+    private Customer customer;
 
-    public Order(String customer) {
+    public Order(Customer customer) {
         this.customer = customer;
     }
 
-    public String getCustomer() {
+    public Customer getCustomer() {
         return customer;
     }
 
-    public void setCustomer(String arg) {
-        customer = arg;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public String getCustomerName() {
+        return customer.getName();
     }
 }

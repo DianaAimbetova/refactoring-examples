@@ -9,8 +9,8 @@ public class Main {
         int result = 0;
         Iterator iter = orders.iterator();
         while (iter.hasNext()) {
-            Order each = (Order) iter.next();
-            if (each.getCustomer().equals(customer)) result++;
+            Order order = (Order) iter.next();
+            if (order.getCustomer().equals(customer)) result++;
         }
         return result;
     }
